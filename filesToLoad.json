@@ -1,6 +1,6 @@
 {
   "title": "STM32WBA Workshop",
-  "githubLoc": "https://raw.githubusercontent.com/manu19901991/STM32WBA_DFAE_WS/master/",
+  "githubLoc": "https://raw.githubusercontent.com/manu19901991/STM32_WBA/master/",
   "options": {
     "allowMenu": true,
     "allowTagSelect": false
@@ -11,16 +11,24 @@
       "name": "STM32WBA Workshop - preparation before the session",
       "path": "/introduction_instalation",
       "file": "file_live_1.md"
+    },
+    
+    {
+      "path": "/WBA",
+      "file": "wba_ho1.md"
     }
-    
-    
+,
+    {
+      "path": "/WBA",
+      "file": "wba_ho2.md"
+    }
 
   ],
   "menuStructure": [
 
     {
       "type": "Folder",
-      "name": "WORKSHOP PREREQUISITES",
+      "name": "BEFORE WORKSHOP",
       "children": [
   
         
@@ -32,14 +40,28 @@
 
 
       ]
+    },
+
+    
+  {
+      "type": "Folder",
+      "name": "STM32WBA - CubeIDE code",
+      "children": [
+        {
+          "type": "File",
+          "name": "Hands_on1",
+          "file": "wba_ho1.md"
+        },
+{
+          "type": "File",
+          "name": "Hands_on2",
+          "file": "wba_ho2.md"
+        }
+
+      ]
+      
     }
 
 
   ] 
 }
-
-
-
-
-
-
