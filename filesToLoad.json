@@ -1,0 +1,45 @@
+{
+  "title": "STM32WBA Workshop",
+  "githubLoc": "https://raw.githubusercontent.com/manu19901991/STM32WBA_DFAE_WS/master/",
+  "options": {
+    "allowMenu": true,
+    "allowTagSelect": false
+  },
+  "filesToLoadArr": [
+
+    {
+      "name": "STM32WBA Workshop - preparation before the session",
+      "path": "/introduction_instalation",
+      "file": "file_live_1.md"
+    }
+    
+    
+
+  ],
+  "menuStructure": [
+
+    {
+      "type": "Folder",
+      "name": "WORKSHOP PREREQUISITES",
+      "children": [
+  
+        
+          {
+            "type": "File",
+            "name": "Before STM32WBA session",
+            "file": "file_live_1.md"
+          }
+
+
+      ]
+    }
+
+
+  ] 
+}
+
+
+
+
+
+
