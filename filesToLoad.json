@@ -14,7 +14,7 @@
   "menuStructure": [
 
     {
-      "type": "Folder",
+      "type": "File",
       "name": "BEFORE WORKSHOP",
        "file": "file_live_1.md"
           }
