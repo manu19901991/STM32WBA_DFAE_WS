@@ -11,6 +11,16 @@
       "name": "STM32WBA Workshop - preparation before the session",
       "path": "/introduction_instalation",
       "file": "file_live_1.md"
+    },
+    
+    {
+      "path": "/WBA",
+      "file": "wba_ho1.md"
+    }
+,
+    {
+      "path": "/WBA",
+      "file": "wba_ho2.md"
     }
 
   ],
