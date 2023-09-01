@@ -6,9 +6,6 @@ Presentation
 ## Dear Participant of STM32WBA Workshop,
 <br>
 
-<ainfo>
-You are supposed to move to this section after completing the installation and downloads described in "Before STM32H5 session"
-</ainfo>
 
 ----
 
@@ -27,7 +24,7 @@ To navigate through this guide, please use the navigation buttons provided.
 
 <br>
 
-If you have any questions or encounter any problems, please do not hesitate to contact us at  **[manuel.marcias@st.com](manuel.marcias@st.com)**
+If you have any questions or encounter any problems, please do not hesitate to contact us at  **[manuel.marcias@st.com](manuel.marcias@st.com)**, **[cyril.blard@st.com](cyril.blard@st.com)**
 
 We look forward to seeing you at the STM32WBA Workshop live session!
 <br>
@@ -52,7 +49,6 @@ We look forward to seeing you at the STM32WBA Workshop live session!
   - **[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)** in version 6.9.1
   - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.13.1
   - **[STM32WBA Cube library](https://www.st.com/en/embedded-software/stm32cubewba.html)** in version 1.1.0
-  - **[CubeMx .ioc project template](https://github.com/manu19901991/WBA_WS/tree/main)** we will use it during hands-on
   - **[Virtual COM port drivers](https://www.st.com/en/development-tools/stsw-stm32102.html)**
   -  any **serial terminal** application (e.g. **[Termite](https://termite.software.informer.com/3.4/)**)
   - ST BLE ToolBox Smartphone Application - this has to be downloaded on your mobile
