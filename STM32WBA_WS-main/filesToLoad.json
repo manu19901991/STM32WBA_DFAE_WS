@@ -1,6 +1,6 @@
 {
   "title": "STM32WBA Workshop",
-  "githubLoc": "https://raw.githubusercontent.com/stm32ws2023/STM32_WBA/master/",
+  "githubLoc": "https://raw.githubusercontent.com/manu19901991/STM32_WBA_DFAE_DS/master/",
   "options": {
     "allowMenu": true,
     "allowTagSelect": false
