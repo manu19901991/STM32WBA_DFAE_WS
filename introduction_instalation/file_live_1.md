@@ -6,9 +6,6 @@ Presentation
 ## Dear Participant of STM32WBA Workshop,
 <br>
 
-
-----
-
 Welcome to our comprehensive guide on how to prepare for the live version of the STM32WBA Workshop session. This step-by-step guide is designed to provide you with all the necessary information about the prerequisites, installation process, and links to materials that will be useful during the session.
 
 In this guide, you will find detailed information about the required software and hardware, as well as a brief overview of the installation process. Additionally, we have included links to materials that will be helpful during the session.
@@ -24,7 +21,7 @@ To navigate through this guide, please use the navigation buttons provided.
 
 <br>
 
-If you have any questions or encounter any problems, please do not hesitate to contact us at  **[manuel.marcias@st.com](manuel.marcias@st.com)**, **[cyril.blard@st.com](cyril.blard@st.com)**
+If you have any questions or encounter any problems, please do not hesitate to contact us at  **[this link](https://community.st.com/t5/stm32wba/stm32wba-workshop-simplify-your-wireless-design-journey-with-st/m-p/594018)**
 
 We look forward to seeing you at the STM32WBA Workshop live session!
 <br>
@@ -35,34 +32,40 @@ We look forward to seeing you at the STM32WBA Workshop live session!
 
 # Prerequisites
 - Hardware:
-  - **PC with MS Windows 10 operating system and admin rights granted**
+  - **PC with MS Windows 10 operating system (preferred) and admin rights granted**
   - **1 USB A to Micro-B Cable** cable 
   <br>
   ![microUSB cables](./img/uUSB.jpg)
   <br>
   - **[NUCLEO-WBA52CG](https://www.st.com/en/evaluation-tools/nucleo-wba52cg.html)** Nucleo-64 development board.
+  It will be provided to you by ST at the workshop session. 
   <br>
   ![H5_DK](./img/5.png)
   <br>
-- Software (PC with **MS Windows 10** operating system):
-  - **[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)** in version 6.9.1
-  - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.13.1
-  - **[STM32WBA Cube library](https://www.st.com/en/embedded-software/stm32cubewba.html)** in version 1.1.0
+- Software (preferred PC with **MS Windows 10** operating system):
+  - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.13.1 or latest
+  - **[STM32WBA Cube library](https://rristm.github.io/tomas_materials_v2/stm32ws2023/STM32WBA_WS/master/file_live_1.md/2)** in version 1.1.0 (**mandatory**) plus latest optional patch (1.1.1)
+    - To be downloaded directly from STM32CubeIDE **[see next slide for procedure](https://rristm.github.io/tomas_materials_v2/stm32ws2023/STM32WBA_WS/master/file_live_1.md/2)**
+  - **[CubeMx .ioc project template](https://github.com/stm32ws2023/WBA_WS_ioc)** we will use it during hands-on
   - **[Virtual COM port drivers](https://www.st.com/en/development-tools/stsw-stm32102.html)**
   -  any **serial terminal** application (e.g. **[Termite](https://termite.software.informer.com/3.4/)**)
   - ST BLE ToolBox Smartphone Application - this has to be downloaded on your mobile
     - **[Android version](https://play.google.com/store/apps/details?id=com.st.dit.stbletoolbox&hl=it&gl=US&pli=1)**
+    <br>
+    ![appqrcode](./img/27.png)
+    <br>
     - **[IOS version](https://apps.apple.com/it/app/st-ble-toolbox/id1531295550)**
+    <br>
+    ![app2qrcode](./img/28.png)
+    <br>
 
 <br>
 
 # Installation process
-- download **STM32CubeMX** from [here](https://www.st.com/en/development-tools/stm32cubemx.html)
-- install **STM32CubeMX** (if not yet done)
 - download **STM32CubeIDE** from [here](https://www.st.com/en/development-tools/stm32cubeide.html)
 - Install **STM32CubeIDE** (if not yet done)
 - download and install **STM32WBA Cube library** (if not done yet):
-  - run **STM32CubeMX**
+  - run **STM32CubeIDE**
   - go to `Help -> Manage Embedded Software Packages`
   - within package manager window find `STM32WBA`, unroll it and select newest available version ( in your case STM32WBA 1.1.0)
   - press `install now`
@@ -162,7 +165,7 @@ Additionally prepared test project can be a base for next hands-on parts during 
 <br>
 ## **Step2** - coding part (`main.c` file)
 <br>
-Define the buffer of bytes to be sent over **USART3** (`USER CODE PV` section):
+Define the buffer of bytes to be sent over **USART1** (`USER CODE PV` section):
 <br>
 
 ```c
@@ -174,7 +177,7 @@ Turn on **LED1_GREEN** (`USER CODE 2` section):
 <br>
 
 ```c
-  HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, 1);
+    HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, 1);
 ```
 
 <br>
@@ -196,7 +199,7 @@ Wait for 250 ms
 ```
 
 <br>
-![Coding3](./img/20.gif)
+![Coding3](./img/30.gif)
 <br>
 
 ----
@@ -205,16 +208,20 @@ Wait for 250 ms
 ## **Step 3** - build the project
 - Build the project using `hammer` button or `Project->Built All` or **Ctrl+B**
 <br>
-![Project build](./img/14.gif)
+![Project build](./img/31.gif)
 <br>
 
 <ainfo>
-In case of neither errors nor warnings after this process, STM32CubeIDE and STM32WBA library are installed correctly. Last point - debug session will be verified during first hands on part on the workshop.
+In case of neither errors nor warnings after this process, STM32CubeIDE and STM32WBA library are installed correctly.
 </ainfo>
 
 
 <ainfo>
 ## **Congratulations** You have completed installation part. Now you are fully prepared for the live workshop session. 
+</ainfo>
+
+<ainfo>
+## Slides for the complete Workshop can be downloaded from [here](https://github.com/stm32ws2023/STM32WBA_WS_Slide_deck). 
 </ainfo>
 
 ----
