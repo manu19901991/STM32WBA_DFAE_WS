@@ -25,7 +25,7 @@ we should have this from our homework
 2. Select `UASRT1`
 3. Set **Mode** as `Asynchronous`
 
-4. Check that pins are at **PA9** & **PA10**
+4. Check that pins are at **PB12** & **PA8**
 
 ![select uart1](./img/22_03_09_131.png)
 
@@ -56,7 +56,7 @@ YourNodeName2
 
 # Configure our new node 2/5
 
-2. In **Request configuration** set **Request as a parameter** to `GPDMA1_REQUEST_USART1_TX`
+2. In **Request configuration** set **Request as a parameter** to `USART1_TX`
 
 ![set uart request](./img/22_03_09_143.gif)
 
@@ -115,12 +115,12 @@ like
 ```c-nc
   /* USER CODE BEGIN 2 */
   MX_YourQueueName_Config();
-  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel15, &YourQueueName);
-  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel15);
+  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel0, &YourQueueName);
+  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel0);
   
   ATOMIC_SET_BIT(huart1.Instance->CR3, USART_CR3_DMAT);
 
-  HAL_ADC_Start(&hadc1);
+  HAL_ADC_Start(&hadc4);
   /* USER CODE END 2 */
 ```
 
@@ -139,13 +139,13 @@ like
 ```c-nc
   /* USER CODE BEGIN 2 */
   MX_YourQueueName_Config();
-  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel15, &YourQueueName);
-  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel15);
+  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel0, &YourQueueName);
+  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel0);
   
   ATOMIC_SET_BIT(huart1.Instance->CR3, USART_CR3_DMAT);
   __HAL_UART_ENABLE(&huart1);
   
-  HAL_ADC_Start(&hadc1);
+  HAL_ADC_Start(&hadc4);
   /* USER CODE END 2 */
 ```
 

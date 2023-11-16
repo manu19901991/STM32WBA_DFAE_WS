@@ -4,24 +4,24 @@ Presentation
 
 # Create new project
 
-Create new project **H5_GPDMA**, similar way as in homework.
+Create new project **WBA_GPDMA**, similar way as in homework.
 
 
-  - start at **NUCLEO-H563ZI** board
+  - start at **NUCLEO-WBA52CG** board
   - do not set default state of IP's
   - enable ICACHE
   - enable SWD
 
 ![create project](./img/CubeIDE_NewProject.png)
 
-# Select ADC1 peripheral
+# Select ADC4 peripheral
 
 Select `ADC1` in **Analog**
 
 ![select ADC](./img/CubeIDE_ADC1.apng)
 
 # Enable 4 adc channels
-Enable channels IN**0**, IN**2**, IN**6**, IN**13** in Sigle-ended mode
+Enable channels IN**2**, IN**3**, IN**4**, IN**6** in Sigle-ended mode
 
 ![select 4 channels](./img/CubeIDE_ADC1CHs.apng)
 
@@ -31,7 +31,7 @@ Enable channels IN**0**, IN**2**, IN**6**, IN**13** in Sigle-ended mode
 
 This option run ADC in loops. When ADC finish converting all its channels it will start again from beginning.
 
-2. Set `DMA continuos request` to **Enable**
+2. Set `Continuous conversion mode` to **Enable**
 
 This option enable DMA request permanently.
 
@@ -61,13 +61,13 @@ Each rank will have assigned one ADC channel to convert. It is possible to selec
 # Change GPDMA mode
 
 1. Select **GPDMA1** in **System** category
-2. Set mode of Channel 6 to `Linked-List Mode`
+2. Set mode of Channel 0 to `Linked-List Mode`
 
 ![set list mode](./img/CubeIDE_Gpdma1.apng)
 
-# Configure CH6
+# Configure CH0
 
-1. Go to **CH6** Configuration
+1. Go to **CH0** Configuration
 2. Set **Execution Mode of Linked List** to `Circular`
 
 ![set ch6](./img/CubeIDE_Gpdma1Ch6.apng)
@@ -123,7 +123,7 @@ In our case when YourNodeName finishes he will reload same configuration. Becaus
 
 # Set node parameters 1/4
 
-1. In **Request configuration ** set **Request as a parameter** to `GPDMA_REQUEST_ADC1`
+1. In **Request configuration ** set **Request as a parameter** to `ADC4`
    
 ![request](./img/CubeIDE_LLI41.apng)
 
@@ -146,7 +146,7 @@ In our case when YourNodeName finishes he will reload same configuration. Becaus
 5. In **Runtime configuration** set **Source Address** to `ADC1->DR`
 
 ```c
-(uint32_t)&(ADC1->DR)
+(uint32_t)&(ADC4->DR)
 ```
 
 6. In **Runtime configuration** set **Destination Address** to `data`

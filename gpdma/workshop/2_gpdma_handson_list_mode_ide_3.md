@@ -18,11 +18,11 @@ to section `/* USER CODE BEGIN 2 */` like
   /* USER CODE BEGIN 2 */
   MX_YourQueueName_Config();
   
-  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel6, &YourQueueName);
+  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel0, &YourQueueName);
   /* USER CODE END 2 */
 ```
 
-First parameter `handle_GPDMA1_Channel6` is GPDMA handle
+First parameter `handle_GPDMA1_Channel0` is GPDMA handle
 Second parameter `YourQueueName` is our Queue
 
 # Start GDMA and ADC
@@ -33,9 +33,9 @@ ADC is started by using `HAL_ADC_Start`, which is preceded by the DMA transfer e
 Add 
 
 ```c
-  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel6);
-  ADC1->CFGR |= ADC_CFGR_DMAEN;
-  HAL_ADC_Start(&hadc1);
+  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel0);
+  ADC4->CFGR1 |= ADC_CFGR1_DMAEN;
+  HAL_ADC_Start(&hadc4);
 ```
 
 To section `/* USER CODE BEGIN 2 */` like 
@@ -44,11 +44,11 @@ To section `/* USER CODE BEGIN 2 */` like
   /* USER CODE BEGIN 2 */
   MX_YourQueueName_Config();
 
-  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel6, &YourQueueName);
+  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel0, &YourQueueName);
 
-  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel6);
-  ADC1->CFGR |= ADC_CFGR_DMAEN;
-  HAL_ADC_Start(&hadc1);
+  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel0);
+  ADC4->CFGR1 |= ADC_CFGR1_DMAEN;
+  HAL_ADC_Start(&hadc4);
   /* USER CODE END 2 */
 ```
 <br>

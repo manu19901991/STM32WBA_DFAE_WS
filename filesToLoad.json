@@ -153,18 +153,7 @@
           "file": "wba_ho2.md"
         }
         ,
-
-        {
-          "type": "Folder",
-          "name": "GPDMA - short",
-          "children": [
-            {
-              "name": "Hands-on",
-              "type": "File",
-              "file": "handson_gpdma.md"
-            }
-          ]
-        },    
+    
         {
           "type": "Folder",
           "name": "GPDMA - full",
@@ -306,19 +295,8 @@
               "file": "9_gpdma_theory_link.md"
             }
           ]
-        },
-        {
-          "type": "Folder",
-          "name": "GPDMA - demo",
-          "children": [
-            {
-              "type": "File",
-              "name": "Demo session",
-              "file": "10_gpdma_handson_demo.md"
-            }
-          ]
-          
         }
+        
 
       ]
       
