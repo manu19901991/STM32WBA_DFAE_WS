@@ -21,7 +21,7 @@ To navigate through this guide, please use the navigation buttons provided.
 
 <br>
 
-If you have any questions or encounter any problems, please do not hesitate to contact us at  **[this link](https://community.st.com/t5/stm32wba/stm32wba-workshop-simplify-your-wireless-design-journey-with-st/m-p/594018)**
+If you have any questions or encounter any problems, please do not hesitate to contact us at  **[manuel.marcias@st.com]**
 
 We look forward to seeing you at the STM32WBA Workshop live session!
 <br>
