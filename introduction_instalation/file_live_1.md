@@ -43,7 +43,7 @@ We look forward to seeing you at the STM32WBA Workshop live session!
   ![H5_DK](./img/5.png)
   <br>
 - Software (preferred PC with **MS Windows 10** operating system):
-  - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.13.1 or latest
+  - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.13.1 - **please be sure to install exactly this version which might not be the latest one**
   - **[STM32WBA Cube library](https://rristm.github.io/tomas_materials_v2/stm32ws2023/STM32WBA_WS/master/file_live_1.md/2)** in version 1.1.0 (**mandatory**) plus latest optional patch (1.1.1)
     - To be downloaded directly from STM32CubeIDE **[see next slide for procedure](https://rristm.github.io/tomas_materials_v2/stm32ws2023/STM32WBA_WS/master/file_live_1.md/2)**
   - **[CubeMx .ioc project template](https://github.com/stm32ws2023/WBA_WS_ioc)** we will use it during hands-on
@@ -62,7 +62,7 @@ We look forward to seeing you at the STM32WBA Workshop live session!
 <br>
 
 # Installation process
-- download **STM32CubeIDE** from [here](https://www.st.com/en/development-tools/stm32cubeide.html)
+- download **STM32CubeIDE** from [here](https://www.st.com/en/development-tools/stm32cubeide.html) **Be sure you have installaed STM32CubeIDE v1.13.1 and not a different version**
 - Install **STM32CubeIDE** (if not yet done)
 - download and install **STM32WBA Cube library** (if not done yet):
   - run **STM32CubeIDE**
