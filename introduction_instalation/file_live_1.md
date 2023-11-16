@@ -62,7 +62,7 @@ We look forward to seeing you at the STM32WBA Workshop live session!
 <br>
 
 # Installation process
-- download **STM32CubeIDE** from [here](https://www.st.com/en/development-tools/stm32cubeide.html) **Be sure you have installaed STM32CubeIDE v1.13.1 and not a different version**
+- download **STM32CubeIDE** from [here](https://www.st.com/en/development-tools/stm32cubeide.html) **Be sure you have installed STM32CubeIDE v1.13.1 and not a different version**
 - Install **STM32CubeIDE** (if not yet done)
 - download and install **STM32WBA Cube library** (if not done yet):
   - run **STM32CubeIDE**
