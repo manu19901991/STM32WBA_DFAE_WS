@@ -12,18 +12,18 @@ Create new project **WBA_GPDMA**, similar way as in homework.
   - enable ICACHE
   - enable SWD
 
-![create project](./img/CubeIDE_NewProject.png)
+![create project](./img/1.gif)
 
 # Select ADC4 peripheral
 
 Select `ADC1` in **Analog**
 
-![select ADC](./img/CubeIDE_ADC1.apng)
+![select ADC](./img/2.gif)
 
 # Enable 4 adc channels
 Enable channels IN**2**, IN**3**, IN**4**, IN**6** in Sigle-ended mode
 
-![select 4 channels](./img/CubeIDE_ADC1CHs.apng)
+![select 4 channels](./img/3.gif)
 
 # Configure the ADC 1/3
 
@@ -41,7 +41,7 @@ This option will stop ADC until the DATA are read from it. It is good to prevent
 
 4. Set `Enable Regular Conversions` to **Enable**
 
-![configure adc 1](./img/CubeIDE_ADC1_1.apng)
+![configure adc 1](./img/3.gif)
 
 # Configure the ADC 2/3
 
@@ -49,52 +49,52 @@ This option will stop ADC until the DATA are read from it. It is good to prevent
 
 This will set ADC to do 4 ADC conversions which we can set.
 
-![configure adc 3](./img/CubeIDE_ADC1_2.apng)
+![configure adc 3](./img/4.gif)
 # Configure the ADC 3/3
 
 1. You can set ADC channel for each `Rank`
 
 Each rank will have assigned one ADC channel to convert. It is possible to select same channel each time.
 
-![configure adc 4](./img/CubeIDE_ADC1_3.apng)
+![configure adc 4](./img/5.gif)
 
 # Change GPDMA mode
 
 1. Select **GPDMA1** in **System** category
 2. Set mode of Channel 0 to `Linked-List Mode`
 
-![set list mode](./img/CubeIDE_Gpdma1.apng)
+![set list mode](./img/6.gif)
 
 # Configure CH0
 
 1. Go to **CH0** Configuration
 2. Set **Execution Mode of Linked List** to `Circular`
 
-![set ch6](./img/CubeIDE_Gpdma1Ch6.apng)
+![set ch6](./img/7.gif)
 
 # Linked List configuration 1/2
 
 1. Go to `LINKEDLIST` peripheral in **Utilities**
 
-![LINKEDLIST periphery](./img/CubeIDE_LLI.apng)
+![LINKEDLIST periphery](./img/8.gif)
 
 # Linked List configuration 2/2
 
 2. Add List by clicking on `Add List` button
 
-![Add list](./img/CubeIDE_LLI2.apng)
+![Add list](./img/9.gif)
 
 # Configue List/Queue 1/3
 
 1. Click on Queue to be able to configure it. Default name is `YourQueueName`
 
-![select queue](./img/CubeIDE_LLI31.apng)
+![select queue](./img/10.gif)
 
 # Configue List/Queue 2/3
 
 2. Set **Linear or circular LinkedList setting** to `Circular`
 
-![select circular mode](./img/CubeIDE_LLI32.apng)
+![select circular mode](./img/11.gif)
 
 # Configue List/Queue 3/3
 
@@ -104,7 +104,7 @@ Each rank will have assigned one ADC channel to convert. It is possible to selec
 YourNodeName
 ```
 
-![select first node name](./img/CubeIDE_LLI32.apng)
+![select first node name](./img/12.gif)
 
 # Node loop
 
@@ -118,20 +118,20 @@ In our case when YourNodeName finishes he will reload same configuration. Becaus
 
 1. Select Node
 
-![select first node name](./img/CubeIDE_LLI4.apng)
+![select first node name](./img/13.gif)
 
 
 # Set node parameters 1/4
 
 1. In **Request configuration ** set **Request as a parameter** to `ADC4`
    
-![request](./img/CubeIDE_LLI41.apng)
+![request](./img/14.gif)
 
 # Set node parameters 2/4
 
 2. In **Source Data Setting** set **Data Width** to `Half Word`
 
-![source configuration](./img/CubeIDE_LLI42.apng)
+![source configuration](./img/15.gif)
 
 # Set node parameters 3/4
 
@@ -139,7 +139,7 @@ In our case when YourNodeName finishes he will reload same configuration. Becaus
 
 4. In **Destination Data Setting** set **Data Width** to `Half Word`
 
-![destination configuration](./img/CubeIDE_LLI43.apng)
+![destination configuration](./img/16.gif)
 
 # Set node parameters 4/4
 
@@ -161,7 +161,7 @@ In our case when YourNodeName finishes he will reload same configuration. Becaus
 (64*2)
 ```
 
-![Runtime configuration](./img/CubeIDE_LLI44.apng)
+![Runtime configuration](./img/17.gif)
 
 # Generate code
 
