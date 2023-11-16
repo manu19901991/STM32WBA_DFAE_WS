@@ -66,7 +66,7 @@ YourNodeName2
 6. In **Runtime configuration** set **Destination address** to `&(UART3->TDR)`
 
 ```c
-(uint32_t)&(USART3->TDR)
+(uint32_t)&(USART1->TDR)
 ```
 
 7. In **Runtime configuration** set **Data Size** to `(64*2)`
