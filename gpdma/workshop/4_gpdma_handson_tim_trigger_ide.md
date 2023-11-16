@@ -7,29 +7,29 @@ Presentation
 1. Select `LINKEDLIST`
 2. Select first node `YourNodeName`
 
-![node selection](./img/CubeIDE_LLITim151.apng)
+![node selection](./img/26.gif)
 
 # Select Trigger
 
    1. In **Trigger** section for option **Trigger configuration** set `Trigger of selected DMA request on rising edge of the selected trigger input event`
    2. In **Trigger** section for option **Trigger Selection** set `TIM2 TRGO`
 
-![trigger selection](./img/CubeIDE_LLITim152.apng)
+![trigger selection](./img/27.gif)
 
 # Select  TIM2 & Configure mode 
 
 1. Select `TIM2`
 2. Check `Internal Clock`
 
-![tim15 selection](./img/CubeIDE_Tim151.apng)
+![tim15 selection](./img/28.gif)
 
-# TIM15 Configuration
+# TIM2 Configuration
 
 1. Set **Prescaller** to `3999` (real value is 3999 + 1)
 2. set **Counter Period** to `3999` (real value is 3999 + 1) to get trigger each 1s for 16MHz AHB
 3. In **Trigger Outpput (TRGO) Parameters** section for option **Trigger Event Selection** set `Update event`
 
-![tim15 configuration](./img/CubeIDE_Tim152.apng)
+![tim15 configuration](./img/29.gif)
 
 # Generate code 
 
