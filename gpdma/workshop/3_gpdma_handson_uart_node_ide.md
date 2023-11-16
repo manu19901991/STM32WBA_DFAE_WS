@@ -5,12 +5,12 @@ Presentation
 # Selecting UART1
 
 1. Open *.ioc file*
-2. Select `USART3`
+2. Select `USART1`
 3. Set **Mode** as `Asynchronous`
 
-4. Check that pins are at **PD8** & **PD9**
+4. Check that pins are at **PB12** & **PA8**
 
-![select uart3](./img/CubeIDE_Uart3.apng)
+![select uart3](./img/18.gif)
 
 5. Keep default **baudrate** `115200`
 
@@ -18,14 +18,14 @@ Presentation
 
 1. Go to **LINKEDLIST** periphery again
 
-![go to linked list](./img/CubeIDE_LLIUsart.apng)
+![go to linked list](./img/18.gif)
 
 # Add new node
 
 1. Select Queue **YourQueueName**
 2. **Add Node**
 
-![add node](./img/CubeIDE_LLIUsart1.apng)
+![add node](./img/20.gif)
 
 # Configure our new node 1/5
 
@@ -35,25 +35,25 @@ Presentation
 YourNodeName2
 ```
 
-![set new node name](./img/CubeIDE_LLIUsart15.apng)
+![set new node name](./img/21.gif)
 
 # Configure our new node 2/5
 
-2. In **Request configuration** set **Request as a parameter** to `GPDMA1_REQUEST_USART3_TX`
+2. In **Request configuration** set **Request as a parameter** to `USART1_TX`
 
-![set uart request](./img/CubeIDE_LLIUsart25.apng)
+![set uart request](./img/22.gif)
 
 # Configure our new node 3/5
 
 3. In **Channel configuration** set **Direction** to `Memory to Periphery`
 
-![set direction](./img/CubeIDE_LLIUsart35.apng)
+![set direction](./img/23.gif)
 
 # Configure our new node 4/5
 
 4. In **Source Data Sertting** set **Source Address Increment After Transfer** to `ENABLE` 
 
-![set source data](./img/CubeIDE_LLIUsart45.apng)
+![set source data](./img/24.gif)
 
 # Configure our new node 5/5
 
@@ -75,7 +75,7 @@ YourNodeName2
 (64*2)
 ```
 
-![set runtime configuration](./img/CubeIDE_LLIUsart55.apng)
+![set runtime configuration](./img/25.gif)
 
 # Generate code
 
