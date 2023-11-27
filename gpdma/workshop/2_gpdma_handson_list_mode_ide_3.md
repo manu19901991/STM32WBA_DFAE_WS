@@ -9,7 +9,7 @@ To connect Queue and GPDMA we will use `HAL_DMAEx_List_LinkQ`
 Add
 
 ```c
-HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel6, &YourQueueName);
+HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel0, &YourQueueName);
 ```
 
 to section `/* USER CODE BEGIN 2 */` like
