@@ -57,11 +57,11 @@ at the end of `/* USER CODE BEGIN 2 */` section
   __HAL_UART_ENABLE(&huart1);
 
   HAL_DMAEx_List_Start(&handle_GPDMA1_Channel0);
-  ADC4->CFGR1 |= ADC_CFGR1_DMAEN;
+  ADC1->CFGR1 |= ADC_CFGR1_DMAEN;
 
-  HAL_ADC_Start(&hadc4);
+  HAL_ADC_Start(&hadc1);
 
-  HAL_TIM_Base_Start(&htim15);
+  HAL_TIM_Base_Start(&htim2);
   /* USER CODE END 2 */
 ```
 
