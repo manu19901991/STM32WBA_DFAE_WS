@@ -63,7 +63,7 @@ YourNodeName2
 (uint32_t)data
 ```
 
-6. In **Runtime configuration** set **Destination address** to `&(UART3->TDR)`
+6. In **Runtime configuration** set **Destination address** to `&(UART1->TDR)`
 
 ```c
 (uint32_t)&(USART1->TDR)
@@ -90,7 +90,7 @@ By using  `ATOMIC_SET_BIT` into `main.c`
 Use 
 
 ```c
-    ATOMIC_SET_BIT(huart3.Instance->CR3, USART_CR3_DMAT);
+    ATOMIC_SET_BIT(huart1.Instance->CR3, USART_CR3_DMAT);
 ```
 
 like 
@@ -100,11 +100,11 @@ like
   /* USER CODE BEGIN 2 */
   MX_YourQueueName_Config();
 
-  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel6, &YourQueueName);
+  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel0, &YourQueueName);
   
-  ATOMIC_SET_BIT(huart3.Instance->CR3, USART_CR3_DMAT);
+  ATOMIC_SET_BIT(huart1.Instance->CR3, USART_CR3_DMAT);
 
-  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel6);
+  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel0);
   ADC1->CFGR |= ADC_CFGR_DMAEN;
   HAL_ADC_Start(&hadc1);
   /* USER CODE END 2 */
@@ -119,7 +119,7 @@ We use `__HAL_UART_ENABLE` to start USART1
 Put code
 
 ```c
-    __HAL_UART_ENABLE(&huart3);
+    __HAL_UART_ENABLE(&huart1);
 ```
 
 like 
@@ -128,12 +128,12 @@ like
   /* USER CODE BEGIN 2 */
   MX_YourQueueName_Config();
 
-  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel6, &YourQueueName);
+  HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel0, &YourQueueName);
   
-  ATOMIC_SET_BIT(huart3.Instance->CR3, USART_CR3_DMAT);
+  ATOMIC_SET_BIT(huart1.Instance->CR3, USART_CR3_DMAT);
   __HAL_UART_ENABLE(&huart3);
 
-  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel6);
+  HAL_DMAEx_List_Start(&handle_GPDMA1_Channel0);
   ADC1->CFGR |= ADC_CFGR_DMAEN;
   HAL_ADC_Start(&hadc1);
   /* USER CODE END 2 */
