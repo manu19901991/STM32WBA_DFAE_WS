@@ -139,17 +139,6 @@
       "type": "Folder",
       "name": "STM32WBA - CubeIDE code",
       "children": [
-        {
-          "type": "File",
-          "name": "Hands_on1",
-          "file": "wba_ho1.md"
-        },
-{
-          "type": "File",
-          "name": "Hands_on2",
-          "file": "wba_ho2.md"
-        }
-        ,
     
         {
           "type": "Folder",
