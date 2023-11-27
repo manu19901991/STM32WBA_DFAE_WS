@@ -221,7 +221,7 @@ In case of neither errors nor warnings after this process, STM32CubeIDE and STM3
 </ainfo>
 
 <ainfo>
-## Slides for the complete Workshop can be downloaded from [here](https://github.com/stm32ws2023/STM32WBA_WS_Slide_deck). 
+## Slides for the complete Workshop can be downloaded from [here](https://github.com/manu19901991/Bologna). 
 </ainfo>
 
 ----
