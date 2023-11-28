@@ -189,12 +189,8 @@
                   "name": "CubeIDE",
                   "type": "File",
                   "file": "3_gpdma_handson_uart_node_ide.md"
-                },
-                {
-                  "name": "Example Code",
-                  "type": "File",
-                  "file": "3_gpdma_handson_uart_node_code.md"
                 }
+                
               ]
             },
             {
@@ -210,12 +206,8 @@
                   "name": "CubeIDE",
                   "type": "File",
                   "file": "4_gpdma_handson_tim_trigger_ide.md"
-                },
-                {
-                  "name": "Example Code",
-                  "type": "File",
-                  "file": "4_gpdma_handson_tim_trigger_code.md"
                 }
+                
               ]
             },
             {
