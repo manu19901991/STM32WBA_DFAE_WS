@@ -16,7 +16,7 @@ Create new project **WBA_GPDMA**, similar way as in homework.
 
 # Select ADC4 peripheral
 
-Select `ADC1` in **Analog**
+Select `ADC4 in **Analog**
 
 ![select ADC](./img/2.gif)
 

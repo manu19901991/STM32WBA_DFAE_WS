@@ -2,50 +2,50 @@
 Presentation
 ----!
 
-# Select ADC1 periphery
+# Select ADC4 periphery
 
-Select `ADC1` in **Analog**
+Select `ADC4` in **Analog**
 
-![select ADC](./img/CubeIDE_BasicADC1.apng)
+![select ADC](./img/2.gif)
 
 # Enable 4 adc channels
-Enable channels IN0, IN2, IN6 and IN13 in Single Ended mode
+Enable channels IN**2**, IN**3**, IN**4**, IN**6** in Sigle-ended mode
 
-![select 4 channels](./img/CubeIDE_BasicADC2.apng)
+![select 4 channels](./img/3.gif)
 
 # Configure the ADC 1/3
 
 1. Set `Continuous conversion mode` to **Enable**
 
-This option run ADC in loops. When ADC finish converting all its channesl it will start again from beginning.
+This option run ADC in loops. When ADC finish converting all its channels it will start again from beginning.
 
-2. Set `DMA continuos Request` to **Enable**
+2. Set `Continuous conversion mode` to **Enable**
 
-This option enables permanent request for DMA transfer
+This option enable DMA request permanently.
 
 3. Set `Low power wait` to **Enable**
 
-This option will stop ADC until the DATA are read form it. It is good to prevent overrun. And we are sure that we have still correct order of channels.
+This option will stop ADC until the DATA are read from it. It is good to prevent overrun. And we are sure that we have still correct order of channels.
 
 4. Set `Enable Regular Conversions` to **Enable**
 
-![configure adc 1](./img/CubeIDE_BasicADC31.apng)
+![configure adc 1](./img/3.gif)
 
 # Configure the ADC 2/3
 
 1. Set `number of conversion` to **4**
 
-This will set ADC to do 4 ADC conversion which we can set.
+This will set ADC to do 4 ADC conversions which we can set.
 
-![configure adc 2](./img/CubeIDE_BasicADC32.apng)
+![configure adc 3](./img/4.gif)
 
 # Configure the ADC 3/3
 
 1. You can set ADC channel for each `Rank`
 
-Each rank will have assing one ADC channel to convert. It is possible to select same chanel each time.
+Each rank will have assigned one ADC channel to convert. It is possible to select same channel each time.
 
-![configure adc 3](./img/CubeIDE_BasicADC33.apng)
+![configure adc 4](./img/5.gif)
 
 # Select GPDMA1
 
@@ -58,7 +58,7 @@ Each rank will have assing one ADC channel to convert. It is possible to select 
 
 1. Select CH6
 2. Set `Circular Mode` to **Enable**
-3. Set `Request` to **ADC1**
+3. Set `Request` to **ADC4**
 
 ![configure GPDMA ch6 1](./img/CubeIDE_BasicGPDMA2.apng)
 
@@ -98,14 +98,14 @@ To start ADC+DMA we can use HAL function `HAL_ADC_Start_DMA`
 We use it like this:
 
 ```c
-  HAL_ADC_Start_DMA(&hadc1, data, 64);
+  HAL_ADC_Start_DMA(&hadc4, data, 64);
 ```
 
 we put it into section `USER CODE BEGIN 2` like bellow
 
 ```c-nc
   /* USER CODE BEGIN 2 */
-  HAL_ADC_Start_DMA(&hadc1, data, 64);
+  HAL_ADC_Start_DMA(&hadc4, data, 64);
   /* USER CODE END 2 */
 ```
 
