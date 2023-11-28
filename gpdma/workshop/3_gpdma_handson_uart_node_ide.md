@@ -131,7 +131,7 @@ like
   HAL_DMAEx_List_LinkQ(&handle_GPDMA1_Channel0, &YourQueueName);
   
   ATOMIC_SET_BIT(huart1.Instance->CR3, USART_CR3_DMAT);
-  __HAL_UART_ENABLE(&huart3);
+  __HAL_UART_ENABLE(&huart1);
 
   HAL_DMAEx_List_Start(&handle_GPDMA1_Channel0);
   ADC1->CFGR |= ADC_CFGR_DMAEN;
