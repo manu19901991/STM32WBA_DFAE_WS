@@ -70,7 +70,7 @@ We look forward to seeing you at the STM32WBA Workshop live session!
   - within package manager window find `STM32WBA`, unroll it and select newest available version ( in your case STM32WBA 1.2.0)
   - press `install now`
 <br>
-![H5_Lib_Install](./img/6.png)
+![H5_Lib_Install](./img/6_1.png)
 
 <ainfo>
 STM32CubeMX and STM32CubeIDE are using the same repository by default, so the installed STM32WBA Cube library will be visible in both tools.
