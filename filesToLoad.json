@@ -1,5 +1,5 @@
 {
-  "title": "STM32WBA Workshop",
+  "title": "STM32WB Matter Workshop",
   "githubLoc": "https://raw.githubusercontent.com/manu19901991/STM32_WBA_DFAE_DS/master/",
   "options": {
     "allowMenu": true,
@@ -8,7 +8,7 @@
   "filesToLoadArr": [
 
     {
-      "name": "STM32WBA Workshop - preparation before the session",
+      "name": "STM32WB Matter Workshop - preparation before the session",
       "path": "/introduction_instalation",
       "file": "file_live_1.md"
     },
@@ -137,12 +137,12 @@
     
   {
       "type": "Folder",
-      "name": "STM32WBA - CubeIDE code",
+      "name": "During WORKSHOP ",
       "children": [
     
         {
           "type": "Folder",
-          "name": "GPDMA1 - full",
+          "name": "Google Nest",
           "children": [
             {
               "name": "1. Introduction",
@@ -151,7 +151,7 @@
             },
             {
               "type": "Folder",
-              "name": "2. Linked list",
+              "name": "Apple HomePod",
               "children": [
                 {
                   "name": "Introduction",
@@ -178,7 +178,7 @@
             },
             {
               "type": "Folder",
-              "name": "3. UART node",
+              "name": "Amazon Alexa",
               "children": [
                 {
                   "name": "Introduction",
@@ -195,7 +195,7 @@
             },
             {
               "type": "Folder",
-              "name": "4. TIM trigger",
+              "name": "Samsung Smart Things",
               "children": [
                 {
                   "name": "Introduction",

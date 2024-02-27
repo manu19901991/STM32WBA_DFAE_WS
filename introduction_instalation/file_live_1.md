@@ -2,82 +2,31 @@
 Presentation
 ----!
 
-# Introduction
-## Dear Participant of STM32WBA Workshop,
-<br>
-
-Welcome to our comprehensive guide on how to prepare for the live version of the STM32WBA Workshop session. This step-by-step guide is designed to provide you with all the necessary information about the prerequisites, installation process, and links to materials that will be useful during the session.
-
-In this guide, you will find detailed information about the required software and hardware, as well as a brief overview of the installation process. Additionally, we have included links to materials that will be helpful during the session.
-
-
-In the appendix, you will find some basic information about the board that we will be using during the session, as well as useful information about the configuration and usage of the STM32CubeIDE.
-<br>
-
-To navigate through this guide, please use the navigation buttons provided.
-<br>
-
-  ![navigation](./img/navigation.gif)
-
-<br>
-
-If you have any questions or encounter any problems, please do not hesitate to contact us at  **[manuel.marcias@st.com]**
-
-We look forward to seeing you at the STM32WBA Workshop live session!
-<br>
-
-## Yours,
-## STMicroelectronics 
-<br>
-
 # Prerequisites
 - Hardware:
-  - **PC with MS Windows 10 operating system (preferred) and admin rights granted**
+  - **PC with MS Windows 10 operating system and admin rights granted**
   - **1 USB A to Micro-B Cable** cable 
   <br>
   ![microUSB cables](./img/uUSB.jpg)
   <br>
-  - **[NUCLEO-WBA52CG](https://www.st.com/en/evaluation-tools/nucleo-wba52cg.html)** Nucleo-64 development board.
-  It will be provided to you by ST at the workshop session. 
+  - **[STM32WB5MM-DK](https://www.st.com/en/evaluation-tools/stm32wb5mm-dk.html)** Nucleo-64 development board.
   <br>
-  ![H5_DK](./img/5.png)
+  ![H5_DK](./img/51.png)
   <br>
-- Software (preferred PC with **MS Windows 10** operating system):
-  - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.14.0 - **please be sure to install exactly this version which might not be the latest one**
-  - **[STM32WBA Cube library](https://rristm.github.io/tomas_materials_v2/stm32ws2023/STM32WBA_WS/master/file_live_1.md/2)** in version 1.2.0 (**mandatory**)
-    - To be downloaded directly from STM32CubeIDE **[see next slide for procedure](https://rristm.github.io/tomas_materials_v2/stm32ws2023/STM32WBA_WS/master/file_live_1.md/2)**
-  - **[CubeMx .ioc project template](https://github.com/stm32ws2023/WBA_WS_ioc)** we will use it during hands-on
+- Software (PC with **MS Windows 10** operating system):
+  - **[STM32CubeProg](https://www.st.com/en/development-tools/stm32cubeprog.html)** in version 2.15.0 or later
   - **[Virtual COM port drivers](https://www.st.com/en/development-tools/stsw-stm32102.html)**
   -  any **serial terminal** application (e.g. **[Termite](https://termite.software.informer.com/3.4/)**)
-  - ST BLE ToolBox Smartphone Application - this has to be downloaded on your mobile
-    - **[Android version](https://play.google.com/store/apps/details?id=com.st.dit.stbletoolbox&hl=it&gl=US&pli=1)**
-    <br>
-    ![appqrcode](./img/27.png)
-    <br>
-    - **[IOS version](https://apps.apple.com/it/app/st-ble-toolbox/id1531295550)**
-    <br>
-    ![app2qrcode](./img/28.png)
-    <br>
+
 
 <br>
 
 # Installation process
-- download **STM32CubeIDE** from [here](https://www.st.com/en/development-tools/stm32cubeide.html) **Be sure you have installed STM32CubeIDE v1.14.0 and not a different version**
-- Install **STM32CubeIDE** (if not yet done)
-- download and install **STM32WBA Cube library** (if not done yet):
-  - run **STM32CubeIDE**
-  - go to `Help -> Manage Embedded Software Packages`
-  - within package manager window find `STM32WBA`, unroll it and select newest available version ( in your case STM32WBA 1.2.0)
-  - press `install now`
-<br>
-![H5_Lib_Install](./img/6_1.png)
-
-<ainfo>
-STM32CubeMX and STM32CubeIDE are using the same repository by default, so the installed STM32WBA Cube library will be visible in both tools.
-</ainfo>
-
+- download **STM32CubeProg** from [here](https://www.st.com/en/development-tools/stm32cubeprog.html)
 
 <br>
+
+
 ----
 
 
