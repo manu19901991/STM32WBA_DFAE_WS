@@ -142,7 +142,7 @@
     
         {
           "type": "Folder",
-          "name": "Google Nest",
+          "name": "Home assistant lits",
           "children": [
             {
               "name": "1. Introduction",
@@ -212,7 +212,7 @@
             },
             {
               "type": "Folder",
-              "name": "5. 2D addressing",
+              "name": "Google Nest",
               "children": [
                 {
                   "name": "Introduction",
