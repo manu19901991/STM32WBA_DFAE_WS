@@ -1,5 +1,5 @@
 {
-  "title": "STM32WB Matter Workshop",
+  "title": "STM32WBA Workshop",
   "githubLoc": "https://raw.githubusercontent.com/manu19901991/STM32_WBA_DFAE_DS/master/",
   "options": {
     "allowMenu": true,
@@ -8,7 +8,7 @@
   "filesToLoadArr": [
 
     {
-      "name": "STM32WB Matter Workshop - preparation before the session",
+      "name": "STM32WBA Workshop - preparation before the session",
       "path": "/introduction_instalation",
       "file": "file_live_1.md"
     },
@@ -137,12 +137,16 @@
     
   {
       "type": "Folder",
-      "name": "During WORKSHOP ",
+      "name": "STM32WBA - CubeIDE code",
       "children": [
     
         {
           "type": "Folder",
+<<<<<<< HEAD
           "name": "Home assistant lits",
+=======
+          "name": "GPDMA1 - full",
+>>>>>>> parent of 43e1496 (upstream)
           "children": [
             {
               "name": "1. Introduction",
@@ -151,7 +155,7 @@
             },
             {
               "type": "Folder",
-              "name": "Apple HomePod",
+              "name": "2. Linked list",
               "children": [
                 {
                   "name": "Introduction",
@@ -178,7 +182,7 @@
             },
             {
               "type": "Folder",
-              "name": "Amazon Alexa",
+              "name": "3. UART node",
               "children": [
                 {
                   "name": "Introduction",
@@ -195,7 +199,7 @@
             },
             {
               "type": "Folder",
-              "name": "Samsung Smart Things",
+              "name": "4. TIM trigger",
               "children": [
                 {
                   "name": "Introduction",
