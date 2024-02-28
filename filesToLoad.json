@@ -142,11 +142,11 @@
     
         {
           "type": "Folder",
-<<<<<<< HEAD
+
           "name": "Home assistant lits",
-=======
+
           "name": "GPDMA1 - full",
->>>>>>> parent of 43e1496 (upstream)
+
           "children": [
             {
               "name": "1. Introduction",
